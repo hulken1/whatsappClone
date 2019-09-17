@@ -32,18 +32,6 @@ class Contatos extends Component {
         );
     }
 }
-const styles = StyleSheet.create({
-    item: {
-      alignItems: 'center',
-      backgroundColor: '#dcda48',
-      flexGrow: 1,
-      margin: 4,
-      padding: 20
-    },
-    text: {
-      color: '#333333'
-    }
-  });
 const mapStateToProps = state => {
     const contatos = _.map(state.ListaContatoReducer, (val, uid) => ({ ...val, uid }));
     return { contatos };

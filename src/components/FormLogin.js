@@ -56,10 +56,12 @@ class formLogin extends Component {
           <TouchableHighlight 
           onPress={() => { Actions.formCadastro(); }}
           > 
+          <View style={{ flexDirection: 'row' }}>
             <Text style={{ fontSize: 18, color: '#fff', marginTop: 10 }}>
-            Ainda não tem cadastro ? Cadastre-se 
+            Ainda não tem cadastro ?
             </Text>
-
+            <Text style={{ fontSize: 18, color: '#3dd', marginTop: 10, marginLeft: 10 }}>Cadastre-se</Text>
+          </View>
           </TouchableHighlight> 
       </View>
 
